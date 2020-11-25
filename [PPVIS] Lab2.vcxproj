@@ -148,10 +148,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Airforce_Function.cpp" />
+    <ClCompile Include="Fighter_Function.cpp" />
     <ClCompile Include="Missile_Function.cpp" />
     <ClCompile Include="Ship_Function.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="[PPVIS] Lab2.cpp" />
+    <ClCompile Include="Tank_Function.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

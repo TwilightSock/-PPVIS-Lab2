@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
+#include <stdio.h>
 #include <string>
+#include <cstdlib>
+#include <windows.h>
 
 using namespace std;
 
@@ -9,17 +12,19 @@ using namespace std;
 class Combat_Vehicle {
 public:
 	int projectile_ammount = 0;
-protected:
 	virtual void shoot() = 0;
+protected:
+	int reload_speed = 0;
 };
 
 class Missile_Launcher : public virtual Combat_Vehicle
 {
 public: 
-	void shoot() override
-	{
-		cout << "Выстрел очередью";
-	}
+	Missile_Launcher(int projectile_ammount, int reload_speed);
+	void shoot();
+protected:
+private:
+	
 };
 
 class Aircraft : public virtual Combat_Vehicle
