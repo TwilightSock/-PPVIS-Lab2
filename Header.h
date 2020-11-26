@@ -21,7 +21,17 @@ protected:
 
 class Missile_Launcher : public virtual Combat_Vehicle
 {
-
+public:
+	Missile_Launcher(int projectile_ammount, int reload_speed, int fixed_speed);
+	void shoot();
+	void bf();
+private:
+	int slot = 6;
+	bool engine = false;
+protected:
+	void aiming();
+	void activation();
+	void move();
 };
 
 class Aircraft : public virtual Combat_Vehicle

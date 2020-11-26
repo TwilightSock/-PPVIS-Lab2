@@ -2,8 +2,6 @@
 using namespace std;
 int main()
 {
-	Tank car(5, 2, 50);
-	car.shoot();
-	car.bf();
-
+	Missile_Launcher t(15, 2, 50);
+	t.shoot();
 }
