@@ -1,3 +1,10 @@
+/*!
+\file
+\brief Файл, в котором хранятся методы класса Missile_Launcher
+
+
+*/
+
 #include "Header.h"
 
 using namespace std;

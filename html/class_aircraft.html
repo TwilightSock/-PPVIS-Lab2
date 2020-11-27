@@ -63,30 +63,48 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_aircraft-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Aircraft Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Подкласс <a class="el" href="class_aircraft.html" title="Подкласс Aircraft.">Aircraft</a>.  
+ <a href="class_aircraft.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_header_8h_source.html">Header.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Aircraft:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_aircraft.png" usemap="#Aircraft_map" alt=""/>
   <map id="Aircraft_map" name="Aircraft_map">
-<area href="class_combat___vehicle.html" alt="Combat_Vehicle" shape="rect" coords="0,0,104,24"/>
-<area href="class_fighter.html" alt="Fighter" shape="rect" coords="0,112,104,136"/>
+<area href="class_combat___vehicle.html" title="Абстрактный класс Combat_Vehicle." alt="Combat_Vehicle" shape="rect" coords="0,0,104,24"/>
+<area href="class_fighter.html" title="Подкласс Fighter." alt="Fighter" shape="rect" coords="0,112,104,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f391a7458596b1a27290d4da9a20290"><td class="memItemLeft" align="right" valign="top"><a id="a2f391a7458596b1a27290d4da9a20290"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Aircraft</b> (int projectile_ammount, int reload_speed)</td></tr>
-<tr class="separator:a2f391a7458596b1a27290d4da9a20290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a878fa92ae7557334959f1de4fa420d59"><td class="memItemLeft" align="right" valign="top"><a id="a878fa92ae7557334959f1de4fa420d59"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
+<tr class="memitem:aa41ecdcbb129dd15937720da6be687f7"><td class="memItemLeft" align="right" valign="top"><a id="aa41ecdcbb129dd15937720da6be687f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Aircraft</b> (int projectile_ammount, int reload_speed, int fixed_speed)</td></tr>
+<tr class="separator:aa41ecdcbb129dd15937720da6be687f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878fa92ae7557334959f1de4fa420d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aircraft.html#a878fa92ae7557334959f1de4fa420d59">shoot</a> ()</td></tr>
+<tr class="memdesc:a878fa92ae7557334959f1de4fa420d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_aircraft.html#a878fa92ae7557334959f1de4fa420d59" title="Функция shoot() описывает действия стрельбы, перезарядки конкретного объекта.">shoot()</a> описывает действия стрельбы, перезарядки конкретного объекта.  <a href="class_aircraft.html#a878fa92ae7557334959f1de4fa420d59">More...</a><br /></td></tr>
 <tr class="separator:a878fa92ae7557334959f1de4fa420d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6495073369159b73422310346dd59fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aircraft.html#ae6495073369159b73422310346dd59fb">bf</a> ()</td></tr>
+<tr class="memdesc:ae6495073369159b73422310346dd59fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_aircraft.html#ae6495073369159b73422310346dd59fb" title="Функция bf() хранит в себе цикл передвижения объекта.">bf()</a> хранит в себе цикл передвижения объекта.  <a href="class_aircraft.html#ae6495073369159b73422310346dd59fb">More...</a><br /></td></tr>
+<tr class="separator:ae6495073369159b73422310346dd59fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5b0b9475ba56f3eac41e43b48adf6bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aircraft.html#a5b0b9475ba56f3eac41e43b48adf6bc6">activation</a> ()</td></tr>
+<tr class="memdesc:a5b0b9475ba56f3eac41e43b48adf6bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_aircraft.html#a5b0b9475ba56f3eac41e43b48adf6bc6" title="Функция activation() описывает условия запуска двигателя/снятия с якоря/включение закрылок и других о...">activation()</a> описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения.  <a href="class_aircraft.html#a5b0b9475ba56f3eac41e43b48adf6bc6">More...</a><br /></td></tr>
+<tr class="separator:a5b0b9475ba56f3eac41e43b48adf6bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ae6f389735655b7d4eb035f593de79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_aircraft.html#ad0ae6f389735655b7d4eb035f593de79">move</a> ()</td></tr>
+<tr class="memdesc:ad0ae6f389735655b7d4eb035f593de79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_aircraft.html#ad0ae6f389735655b7d4eb035f593de79" title="Функция move() отвечает за действия во время поездки, их описание.">move()</a> отвечает за действия во время поездки, их описание.  <a href="class_aircraft.html#ad0ae6f389735655b7d4eb035f593de79">More...</a><br /></td></tr>
+<tr class="separator:ad0ae6f389735655b7d4eb035f593de79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -98,10 +116,143 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>projectile_ammount</b>
 <tr class="memitem:a66346c6f9ac6f97acf79400961022909 inherit pro_attribs_class_combat___vehicle"><td class="memItemLeft" align="right" valign="top"><a id="a66346c6f9ac6f97acf79400961022909"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>reload_speed</b> = 0</td></tr>
 <tr class="separator:a66346c6f9ac6f97acf79400961022909 inherit pro_attribs_class_combat___vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740c034bfc02c7eae454e41b8d5cda12 inherit pro_attribs_class_combat___vehicle"><td class="memItemLeft" align="right" valign="top"><a id="a740c034bfc02c7eae454e41b8d5cda12"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_speed</b> = 0</td></tr>
+<tr class="separator:a740c034bfc02c7eae454e41b8d5cda12 inherit pro_attribs_class_combat___vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab55aaa040377585d7155e6399f6d0e8 inherit pro_attribs_class_combat___vehicle"><td class="memItemLeft" align="right" valign="top"><a id="aab55aaa040377585d7155e6399f6d0e8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b> = 0</td></tr>
+<tr class="separator:aab55aaa040377585d7155e6399f6d0e8 inherit pro_attribs_class_combat___vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Подкласс <a class="el" href="class_aircraft.html" title="Подкласс Aircraft.">Aircraft</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5b0b9475ba56f3eac41e43b48adf6bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0b9475ba56f3eac41e43b48adf6bc6">&#9670;&nbsp;</a></span>activation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Aircraft::activation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_aircraft.html#a5b0b9475ba56f3eac41e43b48adf6bc6" title="Функция activation() описывает условия запуска двигателя/снятия с якоря/включение закрылок и других о...">activation()</a> описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#a96407883a53fa702ff6018988bf58c27">Combat_Vehicle</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_fighter.html#aaca2fa679428623ab6c6f403f47fc5af">Fighter</a>.</p>
+
+</div>
+</div>
+<a id="ae6495073369159b73422310346dd59fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6495073369159b73422310346dd59fb">&#9670;&nbsp;</a></span>bf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Aircraft::bf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_aircraft.html#ae6495073369159b73422310346dd59fb" title="Функция bf() хранит в себе цикл передвижения объекта.">bf()</a> хранит в себе цикл передвижения объекта. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#aed94c26380051cd782ae7cdd63780ae5">Combat_Vehicle</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_fighter.html#a5745c045a7370321837b83a0d6c82aaa">Fighter</a>.</p>
+
+</div>
+</div>
+<a id="ad0ae6f389735655b7d4eb035f593de79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ae6f389735655b7d4eb035f593de79">&#9670;&nbsp;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Aircraft::move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_aircraft.html#ad0ae6f389735655b7d4eb035f593de79" title="Функция move() отвечает за действия во время поездки, их описание.">move()</a> отвечает за действия во время поездки, их описание. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#ad0e476b3b70fed942b3646b3c981487b">Combat_Vehicle</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_fighter.html#a6e9e909670073d6ea9a090074ac48004">Fighter</a>.</p>
+
+</div>
+</div>
+<a id="a878fa92ae7557334959f1de4fa420d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878fa92ae7557334959f1de4fa420d59">&#9670;&nbsp;</a></span>shoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Aircraft::shoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_aircraft.html#a878fa92ae7557334959f1de4fa420d59" title="Функция shoot() описывает действия стрельбы, перезарядки конкретного объекта.">shoot()</a> описывает действия стрельбы, перезарядки конкретного объекта. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#adb772fc471d277cdc4bdcd67d6411044">Combat_Vehicle</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_fighter.html#ac5315aba932ec91198a52470090a1931">Fighter</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_header_8h_source.html">Header.h</a></li>
-<li>Aircraft_Function.cpp</li>
+<li><a class="el" href="_aircraft___function_8cpp.html">Aircraft_Function.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

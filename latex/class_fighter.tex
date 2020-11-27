@@ -1,14 +1,132 @@
 \hypertarget{class_fighter}{}\doxysection{Fighter Class Reference}
 \label{class_fighter}\index{Fighter@{Fighter}}
+
+
+Подкласс \mbox{\hyperlink{class_fighter}{Fighter}}.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
 Inheritance diagram for Fighter\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=3.000000cm]{class_fighter}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fighter_a14a84f8b589d6f17e96bde0f92a42e0e}\label{class_fighter_a14a84f8b589d6f17e96bde0f92a42e0e}} 
+{\bfseries Fighter} (int projectile\+\_\+ammount, int reload\+\_\+speed, int fixed\+\_\+speed)
+\item 
+void \mbox{\hyperlink{class_fighter_ac5315aba932ec91198a52470090a1931}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_fighter_ac5315aba932ec91198a52470090a1931}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a5745c045a7370321837b83a0d6c82aaa}{bf}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_fighter_a5745c045a7370321837b83a0d6c82aaa}{bf()}} хранит в себе цикл передвижения объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a6af8acb6f58b6e415e41d87469c4e1e8}{bomb}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_fighter_a6af8acb6f58b6e415e41d87469c4e1e8}{bomb()}} описывает вычисление зоны поражения в зависимости от размера снаряда в тротиловом эквиваленте. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fighter_aa426c894dbf7f8d736f4c4dac509126d}\label{class_fighter_aa426c894dbf7f8d736f4c4dac509126d}} 
+void {\bfseries flaps} ()
+\item 
+\mbox{\Hypertarget{class_fighter_a3416e7abe43ec8a72a33bd69d0a520a6}\label{class_fighter_a3416e7abe43ec8a72a33bd69d0a520a6}} 
+void {\bfseries chassis} ()
+\item 
+void \mbox{\hyperlink{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}{activation}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fighter_a6e9e909670073d6ea9a090074ac48004}{move}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_fighter_a6e9e909670073d6ea9a090074ac48004}{move()}} отвечает за действия во время поездки, их описание. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fighter_ab2063dd8776fd612292386731c7fed51}\label{class_fighter_ab2063dd8776fd612292386731c7fed51}} 
+bool {\bfseries engine} = false
+\item 
+\mbox{\Hypertarget{class_fighter_ae2753646c467df21abfc125624c50829}\label{class_fighter_ae2753646c467df21abfc125624c50829}} 
+bool {\bfseries chasis} = true
+\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Detailed Description}
+Подкласс \mbox{\hyperlink{class_fighter}{Fighter}}. 
+
+Данный класс -\/ результат множественного наследования от класса \mbox{\hyperlink{class_combat___vehicle}{Combat\+\_\+\+Vehicle}} и \mbox{\hyperlink{class_aircraft}{Aircraft}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}\label{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}} 
+\index{Fighter@{Fighter}!activation@{activation}}
+\index{activation@{activation}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{activation()}{activation()}}
+{\footnotesize\ttfamily void Fighter\+::activation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_fighter_a5745c045a7370321837b83a0d6c82aaa}\label{class_fighter_a5745c045a7370321837b83a0d6c82aaa}} 
+\index{Fighter@{Fighter}!bf@{bf}}
+\index{bf@{bf}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{bf()}{bf()}}
+{\footnotesize\ttfamily void Fighter\+::bf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_fighter_a5745c045a7370321837b83a0d6c82aaa}{bf()}} хранит в себе цикл передвижения объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_fighter_a6af8acb6f58b6e415e41d87469c4e1e8}\label{class_fighter_a6af8acb6f58b6e415e41d87469c4e1e8}} 
+\index{Fighter@{Fighter}!bomb@{bomb}}
+\index{bomb@{bomb}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{bomb()}{bomb()}}
+{\footnotesize\ttfamily void Fighter\+::bomb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция \mbox{\hyperlink{class_fighter_a6af8acb6f58b6e415e41d87469c4e1e8}{bomb()}} описывает вычисление зоны поражения в зависимости от размера снаряда в тротиловом эквиваленте. 
+
+\mbox{\Hypertarget{class_fighter_a6e9e909670073d6ea9a090074ac48004}\label{class_fighter_a6e9e909670073d6ea9a090074ac48004}} 
+\index{Fighter@{Fighter}!move@{move}}
+\index{move@{move}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Fighter\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_fighter_a6e9e909670073d6ea9a090074ac48004}{move()}} отвечает за действия во время поездки, их описание. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_fighter_ac5315aba932ec91198a52470090a1931}\label{class_fighter_ac5315aba932ec91198a52470090a1931}} 
+\index{Fighter@{Fighter}!shoot@{shoot}}
+\index{shoot@{shoot}!Fighter@{Fighter}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Fighter\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_fighter_ac5315aba932ec91198a52470090a1931}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{Combat\+\_\+\+Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Header.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+\mbox{\hyperlink{_fighter___function_8cpp}{Fighter\+\_\+\+Function.\+cpp}}\end{DoxyCompactItemize}

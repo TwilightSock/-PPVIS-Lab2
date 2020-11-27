@@ -1,5 +1,14 @@
 \hypertarget{class_aircraft}{}\doxysection{Aircraft Class Reference}
 \label{class_aircraft}\index{Aircraft@{Aircraft}}
+
+
+Подкласс \mbox{\hyperlink{class_aircraft}{Aircraft}}.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
 Inheritance diagram for Aircraft\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,16 +18,102 @@ Inheritance diagram for Aircraft\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_aircraft_a2f391a7458596b1a27290d4da9a20290}\label{class_aircraft_a2f391a7458596b1a27290d4da9a20290}} 
-{\bfseries Aircraft} (int projectile\+\_\+ammount, int reload\+\_\+speed)
+\mbox{\Hypertarget{class_aircraft_aa41ecdcbb129dd15937720da6be687f7}\label{class_aircraft_aa41ecdcbb129dd15937720da6be687f7}} 
+{\bfseries Aircraft} (int projectile\+\_\+ammount, int reload\+\_\+speed, int fixed\+\_\+speed)
 \item 
-\mbox{\Hypertarget{class_aircraft_a878fa92ae7557334959f1de4fa420d59}\label{class_aircraft_a878fa92ae7557334959f1de4fa420d59}} 
-void {\bfseries shoot} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_aircraft_a878fa92ae7557334959f1de4fa420d59}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_aircraft_a878fa92ae7557334959f1de4fa420d59}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aircraft_ae6495073369159b73422310346dd59fb}{bf}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_aircraft_ae6495073369159b73422310346dd59fb}{bf()}} хранит в себе цикл передвижения объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_aircraft_a5b0b9475ba56f3eac41e43b48adf6bc6}{activation}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_aircraft_a5b0b9475ba56f3eac41e43b48adf6bc6}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aircraft_ad0ae6f389735655b7d4eb035f593de79}{move}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_aircraft_ad0ae6f389735655b7d4eb035f593de79}{move()}} отвечает за действия во время поездки, их описание. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Подкласс \mbox{\hyperlink{class_aircraft}{Aircraft}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_aircraft_a5b0b9475ba56f3eac41e43b48adf6bc6}\label{class_aircraft_a5b0b9475ba56f3eac41e43b48adf6bc6}} 
+\index{Aircraft@{Aircraft}!activation@{activation}}
+\index{activation@{activation}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{activation()}{activation()}}
+{\footnotesize\ttfamily void Aircraft\+::activation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_aircraft_a5b0b9475ba56f3eac41e43b48adf6bc6}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{Combat\+\_\+\+Vehicle}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}{Fighter}}.
+
+\mbox{\Hypertarget{class_aircraft_ae6495073369159b73422310346dd59fb}\label{class_aircraft_ae6495073369159b73422310346dd59fb}} 
+\index{Aircraft@{Aircraft}!bf@{bf}}
+\index{bf@{bf}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{bf()}{bf()}}
+{\footnotesize\ttfamily void Aircraft\+::bf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_aircraft_ae6495073369159b73422310346dd59fb}{bf()}} хранит в себе цикл передвижения объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{Combat\+\_\+\+Vehicle}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fighter_a5745c045a7370321837b83a0d6c82aaa}{Fighter}}.
+
+\mbox{\Hypertarget{class_aircraft_ad0ae6f389735655b7d4eb035f593de79}\label{class_aircraft_ad0ae6f389735655b7d4eb035f593de79}} 
+\index{Aircraft@{Aircraft}!move@{move}}
+\index{move@{move}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Aircraft\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_aircraft_ad0ae6f389735655b7d4eb035f593de79}{move()}} отвечает за действия во время поездки, их описание. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{Combat\+\_\+\+Vehicle}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fighter_a6e9e909670073d6ea9a090074ac48004}{Fighter}}.
+
+\mbox{\Hypertarget{class_aircraft_a878fa92ae7557334959f1de4fa420d59}\label{class_aircraft_a878fa92ae7557334959f1de4fa420d59}} 
+\index{Aircraft@{Aircraft}!shoot@{shoot}}
+\index{shoot@{shoot}!Aircraft@{Aircraft}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Aircraft\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_aircraft_a878fa92ae7557334959f1de4fa420d59}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{Combat\+\_\+\+Vehicle}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fighter_ac5315aba932ec91198a52470090a1931}{Fighter}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Header.\+h\item 
-Aircraft\+\_\+\+Function.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+\mbox{\hyperlink{_aircraft___function_8cpp}{Aircraft\+\_\+\+Function.\+cpp}}\end{DoxyCompactItemize}

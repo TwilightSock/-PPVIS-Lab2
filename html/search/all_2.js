@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fighter_3',['Fighter',['../class_fighter.html',1,'']]]
+  ['combat_5fvehicle_5',['Combat_Vehicle',['../class_combat___vehicle.html',1,'']]]
 ];

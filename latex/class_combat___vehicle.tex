@@ -1,31 +1,129 @@
 \hypertarget{class_combat___vehicle}{}\doxysection{Combat\+\_\+\+Vehicle Class Reference}
 \label{class_combat___vehicle}\index{Combat\_Vehicle@{Combat\_Vehicle}}
+
+
+Абстрактный класс \mbox{\hyperlink{class_combat___vehicle}{Combat\+\_\+\+Vehicle}}.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
 Inheritance diagram for Combat\+\_\+\+Vehicle\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.333333cm]{class_combat___vehicle}
+\includegraphics[height=2.800000cm]{class_combat___vehicle}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}\label{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}} 
-virtual void {\bfseries shoot} ()=0
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{shoot}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{bf}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{bf()}} хранит в себе цикл передвижения объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_combat___vehicle_aa467ea9ece9f4933d559604505ed667c}\label{class_combat___vehicle_aa467ea9ece9f4933d559604505ed667c}} 
 int {\bfseries projectile\+\_\+ammount} = 0
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{move}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{move()}} отвечает за действия во время поездки, их описание. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{activation}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_combat___vehicle_a66346c6f9ac6f97acf79400961022909}\label{class_combat___vehicle_a66346c6f9ac6f97acf79400961022909}} 
 int {\bfseries reload\+\_\+speed} = 0
+\item 
+\mbox{\Hypertarget{class_combat___vehicle_a740c034bfc02c7eae454e41b8d5cda12}\label{class_combat___vehicle_a740c034bfc02c7eae454e41b8d5cda12}} 
+int {\bfseries fixed\+\_\+speed} = 0
+\item 
+\mbox{\Hypertarget{class_combat___vehicle_aab55aaa040377585d7155e6399f6d0e8}\label{class_combat___vehicle_aab55aaa040377585d7155e6399f6d0e8}} 
+int {\bfseries speed} = 0
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Абстрактный класс \mbox{\hyperlink{class_combat___vehicle}{Combat\+\_\+\+Vehicle}}. 
+
+Имеет следующие параметры функций\+: 
+\begin{DoxyParams}{Parameters}
+{\em projectile\+\_\+ammount} & количество снарядов \\
+\hline
+{\em reload\+\_\+speed} & скорость перезарядки \\
+\hline
+{\em fixed\+\_\+speed} & установленную скорость \\
+\hline
+{\em speed} & изначальную скорость \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}\label{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}} 
+\index{Combat\_Vehicle@{Combat\_Vehicle}!activation@{activation}}
+\index{activation@{activation}!Combat\_Vehicle@{Combat\_Vehicle}}
+\doxysubsubsection{\texorpdfstring{activation()}{activation()}}
+{\footnotesize\ttfamily virtual void Combat\+\_\+\+Vehicle\+::activation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. 
+
+
+
+Implemented in \mbox{\hyperlink{class_tank_aecfe61c5270951240588ffada5475e0e}{Tank}}, \mbox{\hyperlink{class_ship_a6ba0242d469df9ae429a7a83e5f727a8}{Ship}}, \mbox{\hyperlink{class_fighter_aaca2fa679428623ab6c6f403f47fc5af}{Fighter}}, \mbox{\hyperlink{class_aircraft_a5b0b9475ba56f3eac41e43b48adf6bc6}{Aircraft}}, and \mbox{\hyperlink{class_missile___launcher_ab0e34a45461cf73761299b8d090b0408}{Missile\+\_\+\+Launcher}}.
+
+\mbox{\Hypertarget{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}\label{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}} 
+\index{Combat\_Vehicle@{Combat\_Vehicle}!bf@{bf}}
+\index{bf@{bf}!Combat\_Vehicle@{Combat\_Vehicle}}
+\doxysubsubsection{\texorpdfstring{bf()}{bf()}}
+{\footnotesize\ttfamily virtual void Combat\+\_\+\+Vehicle\+::bf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{bf()}} хранит в себе цикл передвижения объекта. 
+
+
+
+Implemented in \mbox{\hyperlink{class_tank_ab5c7e56d4292319d956f7f8ab50369c4}{Tank}}, \mbox{\hyperlink{class_ship_a2eaaa067b2e30131de5d851616f9ecff}{Ship}}, \mbox{\hyperlink{class_fighter_a5745c045a7370321837b83a0d6c82aaa}{Fighter}}, \mbox{\hyperlink{class_aircraft_ae6495073369159b73422310346dd59fb}{Aircraft}}, and \mbox{\hyperlink{class_missile___launcher_ab309477f5f98fac5306678c62a5709c6}{Missile\+\_\+\+Launcher}}.
+
+\mbox{\Hypertarget{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}\label{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}} 
+\index{Combat\_Vehicle@{Combat\_Vehicle}!move@{move}}
+\index{move@{move}!Combat\_Vehicle@{Combat\_Vehicle}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void Combat\+\_\+\+Vehicle\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{move()}} отвечает за действия во время поездки, их описание. 
+
+
+
+Implemented in \mbox{\hyperlink{class_tank_a8b7e417e49c89f7b925196b7d3afa39c}{Tank}}, \mbox{\hyperlink{class_ship_a20a5c250b9503f8452d17bd4db0caa59}{Ship}}, \mbox{\hyperlink{class_fighter_a6e9e909670073d6ea9a090074ac48004}{Fighter}}, \mbox{\hyperlink{class_aircraft_ad0ae6f389735655b7d4eb035f593de79}{Aircraft}}, and \mbox{\hyperlink{class_missile___launcher_ac545ed7c7b5017f992f5787c36f12027}{Missile\+\_\+\+Launcher}}.
+
+\mbox{\Hypertarget{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}\label{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}} 
+\index{Combat\_Vehicle@{Combat\_Vehicle}!shoot@{shoot}}
+\index{shoot@{shoot}!Combat\_Vehicle@{Combat\_Vehicle}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily virtual void Combat\+\_\+\+Vehicle\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. 
+
+
+
+Implemented in \mbox{\hyperlink{class_tank_a71c8dad3ef865248067915158babbd92}{Tank}}, \mbox{\hyperlink{class_ship_a18f067150d214757aa32fddcc1561271}{Ship}}, \mbox{\hyperlink{class_fighter_ac5315aba932ec91198a52470090a1931}{Fighter}}, \mbox{\hyperlink{class_aircraft_a878fa92ae7557334959f1de4fa420d59}{Aircraft}}, and \mbox{\hyperlink{class_missile___launcher_a94667d8b5d53108965941df62f292ba7}{Missile\+\_\+\+Launcher}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Header.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{_header_8h}{Header.\+h}}\end{DoxyCompactItemize}

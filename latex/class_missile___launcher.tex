@@ -1,14 +1,110 @@
 \hypertarget{class_missile___launcher}{}\doxysection{Missile\+\_\+\+Launcher Class Reference}
 \label{class_missile___launcher}\index{Missile\_Launcher@{Missile\_Launcher}}
+
+
+Подкласс \mbox{\hyperlink{class_missile___launcher}{Missile\+\_\+\+Launcher}}.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
 Inheritance diagram for Missile\+\_\+\+Launcher\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{class_missile___launcher}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_missile___launcher_a2f64a62dba1090b1069e7d520005a1f4}\label{class_missile___launcher_a2f64a62dba1090b1069e7d520005a1f4}} 
+{\bfseries Missile\+\_\+\+Launcher} (int projectile\+\_\+ammount, int reload\+\_\+speed, int fixed\+\_\+speed)
+\item 
+void \mbox{\hyperlink{class_missile___launcher_a94667d8b5d53108965941df62f292ba7}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_missile___launcher_a94667d8b5d53108965941df62f292ba7}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_missile___launcher_ab309477f5f98fac5306678c62a5709c6}{bf}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_missile___launcher_ab309477f5f98fac5306678c62a5709c6}{bf()}} хранит в себе цикл передвижения объекта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_missile___launcher_ab0e34a45461cf73761299b8d090b0408}{activation}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_missile___launcher_ab0e34a45461cf73761299b8d090b0408}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_missile___launcher_ac545ed7c7b5017f992f5787c36f12027}{move}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_missile___launcher_ac545ed7c7b5017f992f5787c36f12027}{move()}} отвечает за действия во время поездки, их описание. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Detailed Description}
+Подкласс \mbox{\hyperlink{class_missile___launcher}{Missile\+\_\+\+Launcher}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & количество слотов для снарядов projectile\+\_\+ammount \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_missile___launcher_ab0e34a45461cf73761299b8d090b0408}\label{class_missile___launcher_ab0e34a45461cf73761299b8d090b0408}} 
+\index{Missile\_Launcher@{Missile\_Launcher}!activation@{activation}}
+\index{activation@{activation}!Missile\_Launcher@{Missile\_Launcher}}
+\doxysubsubsection{\texorpdfstring{activation()}{activation()}}
+{\footnotesize\ttfamily void Missile\+\_\+\+Launcher\+::activation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_missile___launcher_ab0e34a45461cf73761299b8d090b0408}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_missile___launcher_ab309477f5f98fac5306678c62a5709c6}\label{class_missile___launcher_ab309477f5f98fac5306678c62a5709c6}} 
+\index{Missile\_Launcher@{Missile\_Launcher}!bf@{bf}}
+\index{bf@{bf}!Missile\_Launcher@{Missile\_Launcher}}
+\doxysubsubsection{\texorpdfstring{bf()}{bf()}}
+{\footnotesize\ttfamily void Missile\+\_\+\+Launcher\+::bf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_missile___launcher_ab309477f5f98fac5306678c62a5709c6}{bf()}} хранит в себе цикл передвижения объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_missile___launcher_ac545ed7c7b5017f992f5787c36f12027}\label{class_missile___launcher_ac545ed7c7b5017f992f5787c36f12027}} 
+\index{Missile\_Launcher@{Missile\_Launcher}!move@{move}}
+\index{move@{move}!Missile\_Launcher@{Missile\_Launcher}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Missile\+\_\+\+Launcher\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_missile___launcher_ac545ed7c7b5017f992f5787c36f12027}{move()}} отвечает за действия во время поездки, их описание. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_missile___launcher_a94667d8b5d53108965941df62f292ba7}\label{class_missile___launcher_a94667d8b5d53108965941df62f292ba7}} 
+\index{Missile\_Launcher@{Missile\_Launcher}!shoot@{shoot}}
+\index{shoot@{shoot}!Missile\_Launcher@{Missile\_Launcher}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Missile\+\_\+\+Launcher\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_missile___launcher_a94667d8b5d53108965941df62f292ba7}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{Combat\+\_\+\+Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Header.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+\mbox{\hyperlink{_missile___function_8cpp}{Missile\+\_\+\+Function.\+cpp}}\end{DoxyCompactItemize}

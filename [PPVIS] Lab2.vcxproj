@@ -148,7 +148,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Aircraft_Function.cpp" />
-    <ClCompile Include="Armored_Vehicle_Function.cpp" />
     <ClCompile Include="Fighter_Function.cpp" />
     <ClCompile Include="Missile_Function.cpp" />
     <ClCompile Include="Ship_Function.cpp" />

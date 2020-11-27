@@ -1,14 +1,115 @@
 \hypertarget{class_ship}{}\doxysection{Ship Class Reference}
 \label{class_ship}\index{Ship@{Ship}}
+
+
+Подкласс \mbox{\hyperlink{class_ship}{Ship}}.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
 Inheritance diagram for Ship\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{class_ship}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ship_ae4a76a7fb3a936bbed5ba5b3d5305a1d}\label{class_ship_ae4a76a7fb3a936bbed5ba5b3d5305a1d}} 
+{\bfseries Ship} (int projectile\+\_\+ammount, int reload\+\_\+speed, int fixed\+\_\+speed)
+\item 
+void \mbox{\hyperlink{class_ship_a18f067150d214757aa32fddcc1561271}{shoot}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_ship_a18f067150d214757aa32fddcc1561271}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a2eaaa067b2e30131de5d851616f9ecff}{bf}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_ship_a2eaaa067b2e30131de5d851616f9ecff}{bf()}} хранит в себе цикл передвижения объекта. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a789cb3eaa8f74949ec711b26f6b818c2}{echo}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_ship_a789cb3eaa8f74949ec711b26f6b818c2}{echo()}} описывает использование определение действующей глубины с помощью эхолокатора. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ship_a20a5c250b9503f8452d17bd4db0caa59}{move}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_ship_a20a5c250b9503f8452d17bd4db0caa59}{move()}} отвечает за действия во время поездки, их описание. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a6ba0242d469df9ae429a7a83e5f727a8}{activation}} ()
+\begin{DoxyCompactList}\small\item\em Функция \mbox{\hyperlink{class_ship_a6ba0242d469df9ae429a7a83e5f727a8}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Detailed Description}
+Подкласс \mbox{\hyperlink{class_ship}{Ship}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ship_a6ba0242d469df9ae429a7a83e5f727a8}\label{class_ship_a6ba0242d469df9ae429a7a83e5f727a8}} 
+\index{Ship@{Ship}!activation@{activation}}
+\index{activation@{activation}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{activation()}{activation()}}
+{\footnotesize\ttfamily void Ship\+::activation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_ship_a6ba0242d469df9ae429a7a83e5f727a8}{activation()}} описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_a96407883a53fa702ff6018988bf58c27}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_ship_a2eaaa067b2e30131de5d851616f9ecff}\label{class_ship_a2eaaa067b2e30131de5d851616f9ecff}} 
+\index{Ship@{Ship}!bf@{bf}}
+\index{bf@{bf}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{bf()}{bf()}}
+{\footnotesize\ttfamily void Ship\+::bf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_ship_a2eaaa067b2e30131de5d851616f9ecff}{bf()}} хранит в себе цикл передвижения объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_aed94c26380051cd782ae7cdd63780ae5}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_ship_a789cb3eaa8f74949ec711b26f6b818c2}\label{class_ship_a789cb3eaa8f74949ec711b26f6b818c2}} 
+\index{Ship@{Ship}!echo@{echo}}
+\index{echo@{echo}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{echo()}{echo()}}
+{\footnotesize\ttfamily void Ship\+::echo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция \mbox{\hyperlink{class_ship_a789cb3eaa8f74949ec711b26f6b818c2}{echo()}} описывает использование определение действующей глубины с помощью эхолокатора. 
+
+\mbox{\Hypertarget{class_ship_a20a5c250b9503f8452d17bd4db0caa59}\label{class_ship_a20a5c250b9503f8452d17bd4db0caa59}} 
+\index{Ship@{Ship}!move@{move}}
+\index{move@{move}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Ship\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_ship_a20a5c250b9503f8452d17bd4db0caa59}{move()}} отвечает за действия во время поездки, их описание. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_ad0e476b3b70fed942b3646b3c981487b}{Combat\+\_\+\+Vehicle}}.
+
+\mbox{\Hypertarget{class_ship_a18f067150d214757aa32fddcc1561271}\label{class_ship_a18f067150d214757aa32fddcc1561271}} 
+\index{Ship@{Ship}!shoot@{shoot}}
+\index{shoot@{shoot}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Ship\+::shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \mbox{\hyperlink{class_ship_a18f067150d214757aa32fddcc1561271}{shoot()}} описывает действия стрельбы, перезарядки конкретного объекта. 
+
+
+
+Implements \mbox{\hyperlink{class_combat___vehicle_adb772fc471d277cdc4bdcd67d6411044}{Combat\+\_\+\+Vehicle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Header.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+\mbox{\hyperlink{_ship___function_8cpp}{Ship\+\_\+\+Function.\+cpp}}\end{DoxyCompactItemize}

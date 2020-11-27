@@ -63,29 +63,47 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_tank-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Tank Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Подкласс <a class="el" href="class_tank.html" title="Подкласс Tank.">Tank</a>.  
+ <a href="class_tank.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_header_8h_source.html">Header.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tank:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_tank.png" usemap="#Tank_map" alt=""/>
   <map id="Tank_map" name="Tank_map">
-<area href="class_combat___vehicle.html" alt="Combat_Vehicle" shape="rect" coords="0,0,104,24"/>
+<area href="class_combat___vehicle.html" title="Абстрактный класс Combat_Vehicle." alt="Combat_Vehicle" shape="rect" coords="0,0,104,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9c0328b0da37985a2c0aff6f38d6061"><td class="memItemLeft" align="right" valign="top"><a id="ab9c0328b0da37985a2c0aff6f38d6061"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Tank</b> (int projectile_ammount, int reload_speed)</td></tr>
-<tr class="separator:ab9c0328b0da37985a2c0aff6f38d6061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c8dad3ef865248067915158babbd92"><td class="memItemLeft" align="right" valign="top"><a id="a71c8dad3ef865248067915158babbd92"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shoot</b> ()</td></tr>
+<tr class="memitem:a7901862bb54a9995a50beee24eaee711"><td class="memItemLeft" align="right" valign="top"><a id="a7901862bb54a9995a50beee24eaee711"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Tank</b> (int projectile_ammount, int reload_speed, int fixed_speed)</td></tr>
+<tr class="separator:a7901862bb54a9995a50beee24eaee711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c8dad3ef865248067915158babbd92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank.html#a71c8dad3ef865248067915158babbd92">shoot</a> ()</td></tr>
+<tr class="memdesc:a71c8dad3ef865248067915158babbd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_tank.html#a71c8dad3ef865248067915158babbd92" title="Функция shoot() описывает действия стрельбы, перезарядки конкретного объекта.">shoot()</a> описывает действия стрельбы, перезарядки конкретного объекта.  <a href="class_tank.html#a71c8dad3ef865248067915158babbd92">More...</a><br /></td></tr>
 <tr class="separator:a71c8dad3ef865248067915158babbd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c7e56d4292319d956f7f8ab50369c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank.html#ab5c7e56d4292319d956f7f8ab50369c4">bf</a> ()</td></tr>
+<tr class="memdesc:ab5c7e56d4292319d956f7f8ab50369c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_tank.html#ab5c7e56d4292319d956f7f8ab50369c4" title="Функция bf() хранит в себе цикл передвижения объекта.">bf()</a> хранит в себе цикл передвижения объекта.  <a href="class_tank.html#ab5c7e56d4292319d956f7f8ab50369c4">More...</a><br /></td></tr>
+<tr class="separator:ab5c7e56d4292319d956f7f8ab50369c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aecfe61c5270951240588ffada5475e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank.html#aecfe61c5270951240588ffada5475e0e">activation</a> ()</td></tr>
+<tr class="memdesc:aecfe61c5270951240588ffada5475e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_tank.html#aecfe61c5270951240588ffada5475e0e" title="Функция activation() описывает условия запуска двигателя/снятия с якоря/включение закрылок и других о...">activation()</a> описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения.  <a href="class_tank.html#aecfe61c5270951240588ffada5475e0e">More...</a><br /></td></tr>
+<tr class="separator:aecfe61c5270951240588ffada5475e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7e417e49c89f7b925196b7d3afa39c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tank.html#a8b7e417e49c89f7b925196b7d3afa39c">move</a> ()</td></tr>
+<tr class="memdesc:a8b7e417e49c89f7b925196b7d3afa39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция <a class="el" href="class_tank.html#a8b7e417e49c89f7b925196b7d3afa39c" title="Функция move() отвечает за действия во время поездки, их описание.">move()</a> отвечает за действия во время поездки, их описание.  <a href="class_tank.html#a8b7e417e49c89f7b925196b7d3afa39c">More...</a><br /></td></tr>
+<tr class="separator:a8b7e417e49c89f7b925196b7d3afa39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -97,10 +115,135 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>projectile_ammount</b>
 <tr class="memitem:a66346c6f9ac6f97acf79400961022909 inherit pro_attribs_class_combat___vehicle"><td class="memItemLeft" align="right" valign="top"><a id="a66346c6f9ac6f97acf79400961022909"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>reload_speed</b> = 0</td></tr>
 <tr class="separator:a66346c6f9ac6f97acf79400961022909 inherit pro_attribs_class_combat___vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740c034bfc02c7eae454e41b8d5cda12 inherit pro_attribs_class_combat___vehicle"><td class="memItemLeft" align="right" valign="top"><a id="a740c034bfc02c7eae454e41b8d5cda12"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fixed_speed</b> = 0</td></tr>
+<tr class="separator:a740c034bfc02c7eae454e41b8d5cda12 inherit pro_attribs_class_combat___vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab55aaa040377585d7155e6399f6d0e8 inherit pro_attribs_class_combat___vehicle"><td class="memItemLeft" align="right" valign="top"><a id="aab55aaa040377585d7155e6399f6d0e8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b> = 0</td></tr>
+<tr class="separator:aab55aaa040377585d7155e6399f6d0e8 inherit pro_attribs_class_combat___vehicle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Подкласс <a class="el" href="class_tank.html" title="Подкласс Tank.">Tank</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aecfe61c5270951240588ffada5475e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfe61c5270951240588ffada5475e0e">&#9670;&nbsp;</a></span>activation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tank::activation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_tank.html#aecfe61c5270951240588ffada5475e0e" title="Функция activation() описывает условия запуска двигателя/снятия с якоря/включение закрылок и других о...">activation()</a> описывает условия запуска двигателя/снятия с якоря/включение закрылок и других опций, нужных для движения. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#a96407883a53fa702ff6018988bf58c27">Combat_Vehicle</a>.</p>
+
+</div>
+</div>
+<a id="ab5c7e56d4292319d956f7f8ab50369c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c7e56d4292319d956f7f8ab50369c4">&#9670;&nbsp;</a></span>bf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tank::bf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_tank.html#ab5c7e56d4292319d956f7f8ab50369c4" title="Функция bf() хранит в себе цикл передвижения объекта.">bf()</a> хранит в себе цикл передвижения объекта. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#aed94c26380051cd782ae7cdd63780ae5">Combat_Vehicle</a>.</p>
+
+</div>
+</div>
+<a id="a8b7e417e49c89f7b925196b7d3afa39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7e417e49c89f7b925196b7d3afa39c">&#9670;&nbsp;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tank::move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_tank.html#a8b7e417e49c89f7b925196b7d3afa39c" title="Функция move() отвечает за действия во время поездки, их описание.">move()</a> отвечает за действия во время поездки, их описание. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#ad0e476b3b70fed942b3646b3c981487b">Combat_Vehicle</a>.</p>
+
+</div>
+</div>
+<a id="a71c8dad3ef865248067915158babbd92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c8dad3ef865248067915158babbd92">&#9670;&nbsp;</a></span>shoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tank::shoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция <a class="el" href="class_tank.html#a71c8dad3ef865248067915158babbd92" title="Функция shoot() описывает действия стрельбы, перезарядки конкретного объекта.">shoot()</a> описывает действия стрельбы, перезарядки конкретного объекта. </p>
+
+<p>Implements <a class="el" href="class_combat___vehicle.html#adb772fc471d277cdc4bdcd67d6411044">Combat_Vehicle</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_header_8h_source.html">Header.h</a></li>
-<li>Tank_Function.cpp</li>
+<li><a class="el" href="_tank___function_8cpp.html">Tank_Function.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
